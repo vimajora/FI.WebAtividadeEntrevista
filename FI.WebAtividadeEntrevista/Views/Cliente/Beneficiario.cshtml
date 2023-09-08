@@ -1,0 +1,47 @@
+﻿<!-- Botão para abrir o modal -->
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Beneficiário</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Conteúdo do modal -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Adicionar Beneficiário</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-5 form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+                <div class="col-md-5 form-group">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" maxlength="14" class="form-control" id="cpf">
+                </div>
+                <div class="col-md-2" style="margin-top:4.8%">
+                    <button class="btn btn-success" id="btnIncluir" type="button">Incluir</button>
+                </div>
+
+                <!-- Tabela para exibir beneficiários -->
+                <table class="table mt-3">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaBeneficiarios">
+                        <!-- Os beneficiários incluídos serão exibidos aqui -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
